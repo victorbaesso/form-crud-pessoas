@@ -11,7 +11,7 @@ function App() {
       </Box> 
       <Box align="center" mt={10}>
         made by&nbsp;
-        <Link href="https://github.com/victorbae" color="primary">
+        <Link href="https://github.com/victorbae" target="_BLANK" color="primary">
            J. Victor Baesso
         </Link>
       </Box>
