@@ -1,25 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import Formulario from './components/Formulario/Formulario';
+import {Typography, Box, Container} from '@material-ui/core';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container component="article">
+      <Box align="center" mt={3}>
+        <Typography variant="h5" component="h2">Cadastro de Pessoas</Typography>
+          <Formulario onSubmit={onSubmit} />
+      </Box> 
+    </Container>
   );
+}
+
+function onSubmit(data){
+  console.log(data)
 }
 
 export default App;
